@@ -2,7 +2,7 @@
 layout: page
 title: Lab 2
 description: Second lab assignment for the Causal AI course
-img: assets/img/p1_output_68_1.png
+img: assets/img/p2_output_37_0.svg
 importance: 2
 category: Causal AI course
 giscus_comments: false
