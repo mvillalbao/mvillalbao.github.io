@@ -25,24 +25,20 @@
   "work": [
     {
       "name": "Centro de Investigación de la Universidad del Pacífico (CIUP)",
-      "position": "Reaserch Assistant",
+      "position": "Reaserch Assistant to Manuel Barrón",
+      "url": "https://example.com",
+      "startDate": "2023-09-01",
+      "summary": "Assisted with the development of a randomized control trial studying the effect of homophily on academicoutcomes within student social networks.",
+      "highlights": ["Designed and conducted baseline and endline surveys, critical for the project’s data collection.", "Utilized Stata for rigorous cleaning and analysis of survey and large administrative datasets (+250k observations).","Created comprehensive tables in LaTeX, along with insightful figures."]
+    },
+    {
+      "name": "George Mason University and Inter-American Development Bank",
+      "position": "Research Assistant to Edgar Castro",
       "url": "https://example.com",
       "startDate": "1933-01-01",
       "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "summary": "Assisted with multiple concurrent projects in political economy, primarily focusing on impact evaluation studiesanalyzing the effects of extreme COVID-19 policies in Colombia and Chile.",
+      "highlights": ["Utilized Stata and Python for web-scraping and complex data cleaning of massive government datasets (+2Mobservations).","Used OCR tools in Python for large-scale text extraction.","Fine-tuned and applied LLM for systematic entity identification and extraction, crucial to the project's methodology"]
     }
   ],
   "education": [
