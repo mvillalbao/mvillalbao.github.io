@@ -1,14 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - mvillalbao
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - mvillalbao/01-Medidas_emergencia_PE
+  - mvillalbao/Harry_Potter_Sentiment_Analysis
