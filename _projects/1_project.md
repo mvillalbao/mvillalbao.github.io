@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Lab 1
-description: with background image
-img: assets/img/12.jpg
+description: 
+img: assets/img/p1_output_68_1.png
 importance: 1
 category: Causal AI course
 related_publications: true
@@ -16,79 +16,79 @@ related_publications: true
 
 Given the model:
 
-\begin{align*}
+\begin{align}
 y &= D \beta_1 + W \beta_2 + \mu
-\end{align*}
+\end{align}
 
-where $y$ is an $n \times 1$ vector, $D$ is an $n \times k_1$ matrix, $\beta_1$ is a $k_1 \times 1$ vector, $W$ is an $n \times k_2$ matrix, $\beta_2$ is a $k_2 \times 1$ vector, and $\mu$ is an $n \times 1$ vector of error terms.
+where $y$ is an \(n \times 1\) vector, $D$ is an $n \times k_1$ matrix, $\beta_1$ is a $k_1 \times 1$ vector, $W$ is an $n \times k_2$ matrix, $\beta_2$ is a $k_2 \times 1$ vector, and $\mu$ is an $n \times 1$ vector of error terms.
 
 We can construct the following equation:
 
-\begin{align*}
+\begin{align}
 \epsilon_y &= \epsilon_D \phi + \xi
-\end{align*}
+\end{align}
 
 Running $y$ on $W$, we get:
 
-\begin{align*}
+\begin{align}
 y &= W\hat{\alpha}_1 + \epsilon_y \iff \epsilon_y &= y - W\hat{\alpha}_1
-\end{align*}
+\end{align}
 
 Similarly, running $D$ on $W$ gives us:
 
-\begin{align*}
+\begin{align}
 D &= W\hat{\alpha}_2 + \epsilon_D \iff \epsilon_D &= D - W\hat{\alpha}_2
-\end{align*}
+\end{align}
 
 Running $\epsilon_y$ on $\epsilon_D$:
-\begin{align*}
+\begin{align}
 y - W \hat{\alpha}_1 &= (D - W \hat{\alpha}_2) \phi + \xi \\
 y &= W \hat{\alpha}_1 + (D - W \hat{\alpha}_2) \phi + \xi \\
 y &= W \hat{\alpha}_1 + D \phi - W \hat{\alpha}_2 \phi + \xi \\
 y &= D \phi + W (\hat{\alpha}_1 - \hat{\alpha}_2 \phi) + \xi
-\end{align*}
+\end{align}
 
 Comparing the original model with this, we can see that:
-\begin{align*}
+\begin{align}
     \beta_1 &= \phi \\
     \beta_2 &= \hat{\alpha}_1 - \hat{\alpha}_2 \phi \\
     \mu &= \xi
-\end{align*}
+\end{align}
 
 ### 2. Show that the Conditional Expectation Function minimizes expected squared error
 
 Given the model:
-\begin{align*}
+\begin{align}
 Y &= m(X) + e
-\end{align*}
+\end{align}
 where $m(X)$ represents the conditional expectation of $Y$ on $X$. Let's define an arbitrary model:
-\begin{align*}
+\begin{align}
 Y &= g(X) + w
-\end{align*}
+\end{align}
 where $g(X)$ represents any function of $X$.
 
 Working with the expected squared error from the arbitrary model:
-\begin{align*}
+\begin{align}
 E[(Y-g(X))^2] &= E[(Y-m(X) + m(X)-g(X))^2] \\
 &= E[(Y-m(X))^2 + 2(Y-m(X))(m(X)-g(X)) + (m(X)-g(X))^2] \\
 &= E[e^2] + 2E[(Y-m(X))(m(X)-g(X))] + E[(m(X)-g(X))^2]
-\end{align*}
+\end{align}
 Using the law of iterated expectations:
-\begin{align*}
+\begin{align}
 E[(Y-g(X))^2] &= E[e^2] + 2E[E[(Y-m(X))(m(X)-g(X)) | X]] + E[(m(X)-g(X))^2]
-\end{align*}
+\end{align}
 Since $m(X)$ and $g(X)$ are functions of $X$, the term $(m(X)-g(X))$ can be thought of as constant when conditioning on $X$. Thus:
-\begin{align*}
+\begin{align}
 E[(Y-g(X))^2] &= E[e^2] + 2E[E[Y-m(X) | X](m(X)-g(X))] + E[(m(X)-g(X))^2]
-\end{align*}
+\end{align}
 It is important to note that $E[Y-m(X) | X] = 0$ by definition of $m(X)$, so we get:
-\begin{align*}
+\begin{align}
 E[(Y-g(X))^2] &= E[e^2] + E[(m(X)-g(X))^2]
-\end{align*}
+\end{align}
 Because the second term in the equation is always non-negative, it is clear that the function is minimized when $g(X)$ equals $m(X)$. In which case:
-\begin{align*}
+\begin{align}
 E[(Y-g(X))^2] &= E[e^2]
-\end{align*}
+\end{align}
 
 ## **Replication 1 - Code**
 
