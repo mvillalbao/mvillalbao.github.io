@@ -36,12 +36,12 @@ $$
 
 # Demonstration 1:             
 
-Given the general formula, before using  $$(\alpha,X_{Yw},X_{Dw})$$: $$\widetilde{Y}_{nx1}=Y_{nx1}-W_{nxp}\eta_{{{1}_{px1}}}$$, $$\widetilde{D}_{nx1}=D_{nx1}-W_{nxp}\eta_{{{2}_{px1}}}$$:
+Given the general formula, before using  $$(\alpha,X_{Yw},X_{Dw})$$: $$\widetilde{Y}_{nx1}=Y_{nx1}-W_{nxp}\eta_{1_{px1}}$$, $$\widetilde{D}_{nx1}=D_{nx1}-W_{nxp}\eta_{2_{px1}}$$:
 
 $$
 \begin{align*}
 S_{1}&=\frac{\partial M}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}\\
-&=\frac{\partial E[(\widetilde{Y}_{nx1}(\eta_{1})-a\widetilde{D}(\eta_{2})_{nx1})'(\widetilde{D}(\eta_{2})_{nx1})]}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}=\frac{\partial E[Y_{nx1}-W_{nxp}\eta_{{{1}_{px1}}}-aD_{nx1}+aW_{nxp}\eta_{{{2}_{px1}}})'(D_{nx1}-W_{nxp}\eta_{{{2}_{px1}}})}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}
+&=\frac{\partial E[(\widetilde{Y}_{nx1}(\eta_{1})-a\widetilde{D}(\eta_{2})_{nx1})'(\widetilde{D}(\eta_{2})_{nx1})]}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}=\frac{\partial E[Y_{nx1}-W_{nxp}\eta_{1_{px1}}-aD_{nx1}+aW_{nxp}\eta_{2_{px1}})'(D_{nx1}-W_{nxp}\eta_{2_{px1}})}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}
 \end{align*}
 $$
 
