@@ -16,9 +16,11 @@ related_publications: true
 
 Given the model:
 
+$$
 \begin{align}
 y &= D \beta_1 + W \beta_2 + \mu
 \end{align}
+$$
 
 where $$y$$ is an $$n \times 1$$ vector, $$D$$ is an $$n \times k_1$$ matrix, $$\beta_1$$ is a $$k_1 \times 1$$ vector, $$W$$ is an $$n \times k_2$$ matrix, $$\beta_2$$ is a $$k_2 \times 1$$ vector, and $$\mu$$ is an $$n \times 1$$ vector of error terms.
 
@@ -41,12 +43,15 @@ D &= W\hat{\alpha}_2 + \epsilon_D \iff \epsilon_D &= D - W\hat{\alpha}_2
 \end{align}
 
 Running $$\epsilon_y$$ on $$\epsilon_D$$:
+
+$$
 \begin{align}
 y - W \hat{\alpha}_1 &= (D - W \hat{\alpha}_2) \phi + \xi \\
 y &= W \hat{\alpha}_1 + (D - W \hat{\alpha}_2) \phi + \xi \\
 y &= W \hat{\alpha}_1 + D \phi - W \hat{\alpha}_2 \phi + \xi \\
 y &= D \phi + W (\hat{\alpha}_1 - \hat{\alpha}_2 \phi) + \xi
 \end{align}
+$$
 
 Comparing the original model with this, we can see that:
 \begin{align}
