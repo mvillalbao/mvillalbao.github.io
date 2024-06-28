@@ -50,7 +50,7 @@ Substituting $$(\alpha,W_{Yw},W_{Dw})$$ in $$(a,\eta_{1},\eta_{2})$$:
 $$
 \begin{align*}
 &=\frac{\partial E[(\widetilde{Y}_{nx1}(\eta_{1})-a\widetilde{D}(\eta_{2})_{nx1})'(\widetilde{D}(\eta_{2})_{nx1})]}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}=E[(W_{nxp})'(D_{nx1}-W_{n*p}\eta_{2_{px1}})]|_{(\alpha,W_{Yw},W_{Dw})}\\
-&=E[(W_{nxp})'(D_{nx1}-W_{n*p}X_{{{Dw}_{px1}}})]\\
+&=E[(W_{nxp})'(D_{nx1}-W_{n*p}X_{Dw_{px1}})]\\
 &=E[W'_{pxn}D_{nx1}-W'_{pxn}W_{nxp}(W'_{pxn}W_{nxp})^{-1}(W'_{pxn}D_{nx1})]\\
 &=E[W'_{pxn}D_{nx1}-I_{pxp}(W'_{pxn}D_{nx1})]=E[W'_{pxn}D_{nx1}-W'_{pxn}D_{nx1}]=E[0]\\
 S_{1}&=0
