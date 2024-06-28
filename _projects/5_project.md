@@ -1,12 +1,14 @@
 ---
 layout: page
 title: Lab 5
-description: <a href="https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_5/group3_lab5_python.ipynb">Fifth lab</a> assignment for the Causal AI course
+description: Fifth lab assignment for the Causal AI course
 img: assets/img/p5_output_51_0.png
 importance: 5
 category: Causal AI course
 giscus_comments: false
 ---
+
+The jupiter notebook file is available <a href="https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_5/group3_lab5_python.ipynb">here</a>
 
 # Workgroup 5
 

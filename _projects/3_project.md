@@ -1,12 +1,14 @@
 ---
 layout: page
 title: Lab 3
-description: <a href="https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_3/group3_lab3_python.ipynb">Third lab</a> assignment for the Causal AI course
+description: Third lab assignment for the Causal AI course
 img: assets/img/p3_output_17_4.png
 importance: 3
 category: Causal AI course
 giscus_comments: false
 ---
+
+The jupiter notebook file is available <a href="https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_3/group3_lab3_python.ipynb">here</a>
 
 # Workgroup 3
 

@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Lab 2
-description: <a href="https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_2/group3_lab2_python.ipynb">Second lab</a> assignment for the Causal AI course
+description: Second lab assignment for the Causal AI course
 img: assets/img/p2_output_37_0.svg
 importance: 2
 category: Causal AI course
 giscus_comments: false
 ---
 
+The jupiter notebook file is available <a href="https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_2/group3_lab2_python.ipynb">here</a>
 
 # Potential Outcomes and RCTs
 
