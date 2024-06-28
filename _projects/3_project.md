@@ -17,8 +17,8 @@ giscus_comments: false
 $$
 \begin{align*}
 Y_{nx1} &= \alpha D_{nx1} + W_{nxp}\beta_{px1} + \epsilon_{nx1} \\
-\widetilde{Y}_{nx1} &= Y_{nx1} - W_{nxp}X_{{Yw}_{px1}} \\
-\widetilde{D}_{nx1} &= D_{nx1} - W_{nxp}X_{{Dw}_{px1}} \\
+\widetilde{Y}_{nx1} &= Y_{nx1} - W_{nxp} X_{Yw_{px1}} \\
+\widetilde{D}_{nx1} &= D_{nx1} - W_{nxp} X_{Dw_{px1}} \\
 \end{align*}
 $$
 
