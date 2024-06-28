@@ -105,7 +105,7 @@ $$
 \end{align*}
 $$
 
-Under the traditional assumption that $$E[\epsilon\epsilon'|X] = \sigma^2I$$:
+Under the traditional assumption that $$E[\epsilon\epsilon'\mid X] = \sigma^2I$$:
 
 $$
 \begin{align*}
@@ -1403,8 +1403,8 @@ sprinkler.draw()
 
 
     
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/p1_output_28_0.svg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -1474,8 +1474,8 @@ sprinkler.draw()
 
 
     
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/p2_output_32_0.svg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -1547,8 +1547,8 @@ sprinkler.draw()
 
 
     
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/p2_output_37_0.svg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -1620,8 +1620,8 @@ sprinkler.draw()
 
 
     
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/p2_output_42_0.svg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -1692,8 +1692,8 @@ sprinkler.draw()
 
 
     
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/p2_output_47_0.svg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
