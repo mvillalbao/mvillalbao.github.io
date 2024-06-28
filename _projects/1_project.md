@@ -15,9 +15,11 @@ related_publications: true
 ### 1. Prove the Frisch-Waugh-Lovell theorem
 
 Given the model:
+
 \begin{align*}
 y &= D \beta_1 + W \beta_2 + \mu
 \end{align*}
+
 where $y$ is an $n \times 1$ vector, $D$ is an $n \times k_1$ matrix, $\beta_1$ is a $k_1 \times 1$ vector, $W$ is an $n \times k_2$ matrix, $\beta_2$ is a $k_2 \times 1$ vector, and $\mu$ is an $n \times 1$ vector of error terms.
 
 We can construct the following equation:
@@ -413,7 +415,7 @@ plt.show()
     
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/p1_output_23_0.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/p1_output_23_1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
     
