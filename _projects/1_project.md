@@ -20,7 +20,7 @@ Given the model:
 y &= D \beta_1 + W \beta_2 + \mu
 \end{align}
 
-where $y$ is an \(n \times 1\) vector, $D$ is an $n \times k_1$ matrix, $\beta_1$ is a $k_1 \times 1$ vector, $W$ is an $n \times k_2$ matrix, $\beta_2$ is a $k_2 \times 1$ vector, and $\mu$ is an $n \times 1$ vector of error terms.
+where $$y$$ is an $$n \times 1$$ vector, $$D$$ is an $$n \times k_1$$ matrix, $$\beta_1$$ is a $$k_1 \times 1$$ vector, $$W$$ is an $$n \times k_2$$ matrix, $$\beta_2$$ is a $$k_2 \times 1$$ vector, and $$\mu$$ is an $$n \times 1$$ vector of error terms.
 
 We can construct the following equation:
 
@@ -28,19 +28,19 @@ We can construct the following equation:
 \epsilon_y &= \epsilon_D \phi + \xi
 \end{align}
 
-Running $y$ on $W$, we get:
+Running $$y$$ on $$W$$, we get:
 
 \begin{align}
 y &= W\hat{\alpha}_1 + \epsilon_y \iff \epsilon_y &= y - W\hat{\alpha}_1
 \end{align}
 
-Similarly, running $D$ on $W$ gives us:
+Similarly, running $$D$$ on $$W$$ gives us:
 
 \begin{align}
 D &= W\hat{\alpha}_2 + \epsilon_D \iff \epsilon_D &= D - W\hat{\alpha}_2
 \end{align}
 
-Running $\epsilon_y$ on $\epsilon_D$:
+Running $$\epsilon_y$$ on $$\epsilon_D$$:
 \begin{align}
 y - W \hat{\alpha}_1 &= (D - W \hat{\alpha}_2) \phi + \xi \\
 y &= W \hat{\alpha}_1 + (D - W \hat{\alpha}_2) \phi + \xi \\
@@ -61,11 +61,11 @@ Given the model:
 \begin{align}
 Y &= m(X) + e
 \end{align}
-where $m(X)$ represents the conditional expectation of $Y$ on $X$. Let's define an arbitrary model:
+where $$m(X)$$ represents the conditional expectation of $$Y$$ on $$X$$. Let's define an arbitrary model:
 \begin{align}
 Y &= g(X) + w
 \end{align}
-where $g(X)$ represents any function of $X$.
+where $$g(X)$$ represents any function of $$X$$.
 
 Working with the expected squared error from the arbitrary model:
 \begin{align}
@@ -77,15 +77,15 @@ Using the law of iterated expectations:
 \begin{align}
 E[(Y-g(X))^2] &= E[e^2] + 2E[E[(Y-m(X))(m(X)-g(X)) | X]] + E[(m(X)-g(X))^2]
 \end{align}
-Since $m(X)$ and $g(X)$ are functions of $X$, the term $(m(X)-g(X))$ can be thought of as constant when conditioning on $X$. Thus:
+Since $$m(X)$$ and $$g(X)$$ are functions of $$X$$, the term $$(m(X)-g(X))$$ can be thought of as constant when conditioning on $$X$$. Thus:
 \begin{align}
 E[(Y-g(X))^2] &= E[e^2] + 2E[E[Y-m(X) | X](m(X)-g(X))] + E[(m(X)-g(X))^2]
 \end{align}
-It is important to note that $E[Y-m(X) | X] = 0$ by definition of $m(X)$, so we get:
+It is important to note that $$E[Y-m(X) | X] = 0$$ by definition of $$m(X)$$, so we get:
 \begin{align}
 E[(Y-g(X))^2] &= E[e^2] + E[(m(X)-g(X))^2]
 \end{align}
-Because the second term in the equation is always non-negative, it is clear that the function is minimized when $g(X)$ equals $m(X)$. In which case:
+Because the second term in the equation is always non-negative, it is clear that the function is minimized when $$g(X)$$ equals $$m(X)$$. In which case:
 \begin{align}
 E[(Y-g(X))^2] &= E[e^2]
 \end{align}
@@ -105,8 +105,8 @@ To investigate the gender wage gap, we consider the following log-linear regress
 &= \beta_1 D  + \beta_2' W + \epsilon,
 \end{align}
 
-where $D$ is the indicator of being female ($1$ if female and $0$ otherwise) and the
-$W$'s are controls explaining variation in wages. Considering transformed wages by the logarithm, we are analyzing the relative difference in the payment of men and women.
+where $$D$$ is the indicator of being female ($$1$$ if female and $$0$$ otherwise) and the
+$$W$$'s are controls explaining variation in wages. Considering transformed wages by the logarithm, we are analyzing the relative difference in the payment of men and women.
 
 ### Data analysis
 
@@ -751,7 +751,7 @@ print( table_html )
   </tbody>
 </table>
 
-In particular, the table above shows that the difference in average *logwage* between men and women is equal to $0,075$
+In particular, the table above shows that the difference in average *logwage* between men and women is equal to $$0,075$$
 
 
 ```python
@@ -765,9 +765,9 @@ data_female['lwage'].mean()- data_male['lwage'].mean()
 
 
 
-Thus, the unconditional gender wage gap is about $7,5$\% for the group of never married workers (women get paid less on average in our sample). We also observe that never married working women are relatively more educated than working men and have lower working experience.
+Thus, the unconditional gender wage gap is about $$7,5$$\% for the group of never married workers (women get paid less on average in our sample). We also observe that never married working women are relatively more educated than working men and have lower working experience.
 
-This unconditional (predictive) effect of gender equals the coefficient $\beta$ in the univariate ols regression of $Y$ on $D$:
+This unconditional (predictive) effect of gender equals the coefficient $$\beta$$ in the univariate ols regression of $$Y$$ on $$D$$:
 
 \begin{align}
 \log(Y) &=\beta D + \epsilon.
@@ -805,13 +805,13 @@ print( f'The estimated gender coefficient is {nocontrol_est} and the correspondi
     
     
 
-Next, we run an ols regression of $Y$ on $(D,W)$ to control for the effect of covariates summarized in $W$:
+Next, we run an ols regression of $$Y$$ on $$(D,W)$$ to control for the effect of covariates summarized in $$W$$:
 
 \begin{align}
 \log(Y) &=\beta_1 D  + \beta_2' W + \epsilon.
 \end{align}
 
-Here, we are considering the flexible model from the previous lab. Hence, $W$ controls for experience, education, region, and occupation and industry indicators plus transformations and two-way interactions.
+Here, we are considering the flexible model from the previous lab. Hence, $$W$$ controls for experience, education, region, and occupation and industry indicators plus transformations and two-way interactions.
 
 Let us run the ols regression with controls.
 
@@ -906,8 +906,8 @@ control_model
 
 
 
-The estimated regression coefficient $\beta_1\approx-0.0676$ measures how our linear prediction of wage changes if we set the gender variable $D$ from 0 to 1, holding the controls $W$ fixed.
-We can call this the *predictive effect* (PE), as it measures the impact of a variable on the prediction we make. Overall, we see that the unconditional wage gap of size $4$\% for women increases to about $7$\% after controlling for worker characteristics.  
+The estimated regression coefficient $$\beta_1\approx-0.0676$$ measures how our linear prediction of wage changes if we set the gender variable $$D$$ from 0 to 1, holding the controls $$W$$ fixed.
+We can call this the *predictive effect* (PE), as it measures the impact of a variable on the prediction we make. Overall, we see that the unconditional wage gap of size $$4$$\% for women increases to about $$7$$\% after controlling for worker characteristics.  
 
 
 Next, we are using the Frisch-Waugh-Lovell theorem from the lecture partialling-out the linear effect of the controls via ols.
@@ -988,10 +988,10 @@ partial_fit.conf_int( alpha=0.05 ).loc[['t_D']]
 
 
 
-Again, the estimated coefficient measures the linear predictive effect (PE) of $D$ on $Y$ after taking out the linear effect of $W$ on both of these variables. This coefficient equals the estimated coefficient from the ols regression with controls.
+Again, the estimated coefficient measures the linear predictive effect (PE) of $$D$$ on $$Y$$ after taking out the linear effect of $$W$$ on both of these variables. This coefficient equals the estimated coefficient from the ols regression with controls.
 
-We know that the partialling-out approach works well when the dimension of $W$ is low
-in relation to the sample size $n$. When the dimension of $W$ is relatively high, we need to use variable selection
+We know that the partialling-out approach works well when the dimension of $$W$$ is low
+in relation to the sample size $$n$$. When the dimension of $$W$$ is relatively high, we need to use variable selection
 or penalization for regularization purposes. 
 
 
