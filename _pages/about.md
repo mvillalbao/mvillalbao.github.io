@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <p>Research Assistant</p>
     <p>Universidad del Pacífico</p>
-    <p>Centro de Investigación de la Universidad del Pacífico</p>
     <p>Lima, Perú</p>
 
 news: true # includes a list of news items
