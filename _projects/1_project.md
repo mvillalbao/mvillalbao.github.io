@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lab 1
+title: <a href="https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_1/group1_lab1_python.ipynb" target="_blank">Lab 1
 description: First lab assignment for the Causal AI course
 img: assets/img/p1_output_68_1.png
 importance: 1
