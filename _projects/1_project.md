@@ -36,7 +36,8 @@ Running $$y$$ on $$W$$, we get:
 
 $$
 \begin{align*}
-y &= W\hat{\alpha}_1 + \epsilon_y \iff \epsilon_y &= y - W\hat{\alpha}_1
+y &= W\hat{\alpha}_1 + \epsilon_y \iff \epsilon_y \\
+&= y - W\hat{\alpha}_1
 \end{align*}
 $$
 
@@ -44,11 +45,13 @@ Similarly, running $$D$$ on $$W$$ gives us:
 
 $$
 \begin{align*}
-D &= W\hat{\alpha}_2 + \epsilon_D \iff \epsilon_D &= D - W\hat{\alpha}_2
+D &= W\hat{\alpha}_2 + \epsilon_D \iff \epsilon_D \\
+&= D - W\hat{\alpha}_2
 \end{align*}
 $$
 
 Running $$\epsilon_y$$ on $$\epsilon_D$$:
+
 $$
 \begin{align*}
 y - W \hat{\alpha}_1 &= (D - W \hat{\alpha}_2) \phi + \xi \\
@@ -59,6 +62,7 @@ y &= D \phi + W (\hat{\alpha}_1 - \hat{\alpha}_2 \phi) + \xi
 $$
 
 Comparing the original model with this, we can see that:
+
 $$
 \begin{align*}
     \beta_1 &= \phi \\
@@ -70,20 +74,25 @@ $$
 ### 2. Show that the Conditional Expectation Function minimizes expected squared error
 
 Given the model:
+
 $$
 \begin{align*}
 Y &= m(X) + e
 \end{align*}
 $$
+
 where $$m(X)$$ represents the conditional expectation of $$Y$$ on $$X$$. Let's define an arbitrary model:
+
 $$
 \begin{align*}
 Y &= g(X) + w
 \end{align*}
 $$
+
 where $$g(X)$$ represents any function of $$X$$.
 
 Working with the expected squared error from the arbitrary model:
+
 $$
 \begin{align*}
 E[(Y-g(X))^2] &= E[(Y-m(X) + m(X)-g(X))^2] \\
@@ -91,25 +100,33 @@ E[(Y-g(X))^2] &= E[(Y-m(X) + m(X)-g(X))^2] \\
 &= E[e^2] + 2E[(Y-m(X))(m(X)-g(X))] + E[(m(X)-g(X))^2]
 \end{align*}
 $$
+
 Using the law of iterated expectations:
+
 $$
 \begin{align*}
 E[(Y-g(X))^2] &= E[e^2] + 2E[E[(Y-m(X))(m(X)-g(X)) | X]] + E[(m(X)-g(X))^2]
 \end{align*}
 $$
+
 Since $$m(X)$$ and $$g(X)$$ are functions of $$X$$, the term $$(m(X)-g(X))$$ can be thought of as constant when conditioning on $$X$$. Thus:
+
 $$
 \begin{align*}
 E[(Y-g(X))^2] &= E[e^2] + 2E[E[Y-m(X) | X](m(X)-g(X))] + E[(m(X)-g(X))^2]
 \end{align*}
 $$
+
 It is important to note that $$E[Y-m(X) | X] = 0$$ by definition of $$m(X)$$, so we get:
+
 $$
 \begin{align*}
 E[(Y-g(X))^2] &= E[e^2] + E[(m(X)-g(X))^2]
 \end{align*}
 $$
+
 Because the second term in the equation is always non-negative, it is clear that the function is minimized when $$g(X)$$ equals $$m(X)$$. In which case:
+
 $$
 \begin{align*}
 E[(Y-g(X))^2] &= E[e^2]
