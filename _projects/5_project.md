@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Lab 5
-description: Fifth lab assignment for the Causal AI course
+description: <a href="https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_5/group3_lab5_python.ipynb">Fifth lab</a> assignment for the Causal AI course
 img: assets/img/p5_output_51_0.png
 importance: 5
 category: Causal AI course
