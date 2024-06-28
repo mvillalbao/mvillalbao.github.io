@@ -17,9 +17,9 @@ related_publications: true
 Given the model:
 
 $$
-\begin{align}
+\begin{align*}
 y &= D \beta_1 + W \beta_2 + \mu
-\end{align}
+\end{align*}
 $$
 
 where $$y$$ is an $$n \times 1$$ vector, $$D$$ is an $$n \times k_1$$ matrix, $$\beta_1$$ is a $$k_1 \times 1$$ vector, $$W$$ is an $$n \times k_2$$ matrix, $$\beta_2$$ is a $$k_2 \times 1$$ vector, and $$\mu$$ is an $$n \times 1$$ vector of error terms.
