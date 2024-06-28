@@ -8,11 +8,11 @@ category: Causal AI course
 related_publications: true
 ---
 
-# Workgroup - group 3
+# Workgroup - group 3\\
 
-## **Math Demonstrations**
+## **Math Demonstrations**\\
 
-### 1. Prove the Frisch-Waugh-Lovell theorem
+### 1. Prove the Frisch-Waugh-Lovell theorem\\
 
 Given the model:
 
@@ -26,21 +26,27 @@ where $$y$$ is an $$n \times 1$$ vector, $$D$$ is an $$n \times k_1$$ matrix, $$
 
 We can construct the following equation:
 
+$$
 \begin{align}
 \epsilon_y &= \epsilon_D \phi + \xi
 \end{align}
+$$
 
 Running $$y$$ on $$W$$, we get:
 
+$$
 \begin{align}
 y &= W\hat{\alpha}_1 + \epsilon_y \iff \epsilon_y &= y - W\hat{\alpha}_1
 \end{align}
+$$
 
 Similarly, running $$D$$ on $$W$$ gives us:
 
+$$
 \begin{align}
 D &= W\hat{\alpha}_2 + \epsilon_D \iff \epsilon_D &= D - W\hat{\alpha}_2
 \end{align}
+$$
 
 Running $$\epsilon_y$$ on $$\epsilon_D$$:
 
@@ -54,46 +60,62 @@ y &= D \phi + W (\hat{\alpha}_1 - \hat{\alpha}_2 \phi) + \xi
 $$
 
 Comparing the original model with this, we can see that:
+$$
 \begin{align}
     \beta_1 &= \phi \\
     \beta_2 &= \hat{\alpha}_1 - \hat{\alpha}_2 \phi \\
     \mu &= \xi
 \end{align}
+$$
 
 ### 2. Show that the Conditional Expectation Function minimizes expected squared error
 
 Given the model:
+$$
 \begin{align}
 Y &= m(X) + e
 \end{align}
+$$
 where $$m(X)$$ represents the conditional expectation of $$Y$$ on $$X$$. Let's define an arbitrary model:
+$$
 \begin{align}
 Y &= g(X) + w
 \end{align}
+$$
 where $$g(X)$$ represents any function of $$X$$.
 
 Working with the expected squared error from the arbitrary model:
+$$
 \begin{align}
 E[(Y-g(X))^2] &= E[(Y-m(X) + m(X)-g(X))^2] \\
 &= E[(Y-m(X))^2 + 2(Y-m(X))(m(X)-g(X)) + (m(X)-g(X))^2] \\
 &= E[e^2] + 2E[(Y-m(X))(m(X)-g(X))] + E[(m(X)-g(X))^2]
 \end{align}
+$$
 Using the law of iterated expectations:
+$$
 \begin{align}
 E[(Y-g(X))^2] &= E[e^2] + 2E[E[(Y-m(X))(m(X)-g(X)) | X]] + E[(m(X)-g(X))^2]
 \end{align}
+$$
 Since $$m(X)$$ and $$g(X)$$ are functions of $$X$$, the term $$(m(X)-g(X))$$ can be thought of as constant when conditioning on $$X$$. Thus:
+$$
 \begin{align}
 E[(Y-g(X))^2] &= E[e^2] + 2E[E[Y-m(X) | X](m(X)-g(X))] + E[(m(X)-g(X))^2]
 \end{align}
+$$
 It is important to note that $$E[Y-m(X) | X] = 0$$ by definition of $$m(X)$$, so we get:
+$$
 \begin{align}
 E[(Y-g(X))^2] &= E[e^2] + E[(m(X)-g(X))^2]
 \end{align}
+$$
 Because the second term in the equation is always non-negative, it is clear that the function is minimized when $$g(X)$$ equals $$m(X)$$. In which case:
+$$
 \begin{align}
 E[(Y-g(X))^2] &= E[e^2]
 \end{align}
+$$
 
 ## **Replication 1 - Code**
 
@@ -105,10 +127,12 @@ Thus, we analyze if there is a difference in the payment of men and women (*gend
 
 To investigate the gender wage gap, we consider the following log-linear regression model
 
+$$
 \begin{align}
 \log(Y) &= \beta'X + \epsilon\\
 &= \beta_1 D  + \beta_2' W + \epsilon,
 \end{align}
+$$
 
 where $$D$$ is the indicator of being female ($$1$$ if female and $$0$$ otherwise) and the
 $$W$$'s are controls explaining variation in wages. Considering transformed wages by the logarithm, we are analyzing the relative difference in the payment of men and women.
@@ -774,9 +798,11 @@ Thus, the unconditional gender wage gap is about $$7,5$$\% for the group of neve
 
 This unconditional (predictive) effect of gender equals the coefficient $$\beta$$ in the univariate ols regression of $$Y$$ on $$D$$:
 
+$$
 \begin{align}
 \log(Y) &=\beta D + \epsilon.
 \end{align}
+$$
 
 We verify this by running an ols regression in R.
 
@@ -812,9 +838,11 @@ print( f'The estimated gender coefficient is {nocontrol_est} and the correspondi
 
 Next, we run an ols regression of $$Y$$ on $$(D,W)$$ to control for the effect of covariates summarized in $$W$$:
 
+$$
 \begin{align}
 \log(Y) &=\beta_1 D  + \beta_2' W + \epsilon.
 \end{align}
+$$
 
 Here, we are considering the flexible model from the previous lab. Hence, $$W$$ controls for experience, education, region, and occupation and industry indicators plus transformations and two-way interactions.
 
