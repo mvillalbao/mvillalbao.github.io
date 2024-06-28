@@ -117,7 +117,7 @@ E[(Y-g(X))^2] &= E[e^2] + 2E[E[Y-m(X) | X](m(X)-g(X))] + E[(m(X)-g(X))^2]
 \end{align*}
 $$
 
-It is important to note that $$E[Y-m(X)|X]=0$$, so we get:
+It is important to note that $$E[Y-m(X) \mid X]=0$$ by definition of $$m(X)$$, so we get:
 
 $$
 \begin{align*}
