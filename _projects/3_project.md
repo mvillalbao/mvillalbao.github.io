@@ -12,6 +12,51 @@ giscus_comments: false
 
 **Group 3**: Valerie Dube, Erzo Garay, Juan Marcos Guerrero y Matías Villalba,
 
+## 1. Neyman Orthogonality Proof
+
+$$
+\begin{align*}
+Y_{nx1} &= \alpha D_{nx1} + W_{nxp}\beta_{px1} + \epsilon_{nx1} \\
+\widetilde{Y}_{nx1} &= Y_{nx1} - W_{nxp}X_{{{Yw}_{px1}}} \\
+\widetilde{D}_{nx1} &= D_{nx1} - W_{nxp}X_{{{Dw}_{px1}}} \\
+\end{align*}
+$$
+
+Where $$W$$ equals a matrix composed by one variable in each column, $$X$$ equals a vector of coefficients, $$n$$ equals the number of observations, and $$p$$ equals the number of confounders.
+
+$$
+\begin{align*}
+M(a,\eta) &= E[(\widetilde{Y}_{nx1}(\eta_{1}) - a\widetilde{D}(\eta_{2})_{nx1})'(\widetilde{D}(\eta_{2})_{nx1})]=0 \\
+\frac{\partial a}{\partial \eta} &= -[\frac{\partial M}{\partial a}(\alpha,\eta_{0})]^{-1}[\frac{\partial M}{\partial \eta}(\alpha,\eta_{0})] \\
+\frac{\partial M}{\partial \eta}(\alpha,\eta_{0})&=\frac{\partial M}{\partial \eta_{1}}(\alpha,X_{Yw},X_{Dw})+\frac{\partial M}{\partial \eta_{2}}(\alpha,X_{Yw},X_{Dw})\\
+S_{1}&=\frac{\partial M}{\partial \eta_{1}}(\alpha,X_{Yw},X_{Dw}),  S_{2}=\frac{\partial M}{\partial \eta_{2}}(\alpha,X_{Yw},X_{Dw})
+\end{align*}
+$$
+
+
+# Demonstration 1:             
+
+Given the general formula, before using  $$(\alpha,X_{Yw},X_{Dw})$$: $$\widetilde{Y}_{nx1}=Y_{nx1}-W_{nxp}\eta_{{{1}_{px1}}}$$, $$\widetilde{D}_{nx1}=D_{nx1}-W_{nxp}\eta_{{{2}_{px1}}}$$:
+
+$$
+\begin{align*}
+S_{1}&=\frac{\partial M}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}\\
+&=\frac{\partial E[(\widetilde{Y}_{nx1}(\eta_{1})-a\widetilde{D}(\eta_{2})_{nx1})'(\widetilde{D}(\eta_{2})_{nx1})}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}=\frac{\partial E[Y_{nx1}-W_{nxp}\eta_{{{1}_{px1}}}-aD_{nx1}+aW_{nxp}\eta_{{{2}_{px1}}})'(D_{nx1}-W_{nxp}\eta_{{{2}_{px1}}})}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}
+\end{align*}
+$$
+
+Substituting $$(\alpha,W_{Yw},W_{Dw})$$ in $$(a,\eta_{1},\eta_{2})$$:
+
+$$
+\begin{align*}
+&=\frac{\partial E[(\widetilde{Y}_{nx1}(\eta_{1})-a\widetilde{D}(\eta_{2})_{nx1})'(\widetilde{D}(\eta_{2})_{nx1})]}{\partial \eta_{1}}|_{(\alpha,W_{Yw},W_{Dw})}=E[(W_{nxp})'(D_{nx1}-W_{n*p}\eta_{{2}_{px1}})]|_{(\alpha,W_{Yw},W_{Dw})}\\
+&=E[(W_{nxp})'(D_{nx1}-W_{n*p}X_{{{Dw}_{px1}}})]\\
+&=E[W'_{pxn}D_{nx1}-W'_{pxn}W_{nxp}(W'_{pxn}W_{nxp})^{-1}(W'_{pxn}D_{nx1})]\\
+&=E[W'_{pxn}D_{nx1}-I_{pxp}(W'_{pxn}D_{nx1})]=E[W'_{pxn}D_{nx1}-W'_{pxn}D_{nx1}]=E[0]\\
+S_{1}=0
+\end{align*}
+$$
+
 
 
 
