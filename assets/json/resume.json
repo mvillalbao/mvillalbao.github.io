@@ -25,7 +25,8 @@
   "work": [
     {
       "name": "Centro de Investigación de la Universidad del Pacífico (CIUP)",
-      "position": "Reaserch Assistant to Manuel Barrón",
+      "position": "Research Assistant to Manuel Barrón",
+      "url": "https://ciup.up.edu.pe/investigadores/manuel-barron/",
       "location": "Lima, Perú",
       "startDate": "2023-09-01",
       "summary": "Assisted with the development of a randomized control trial studying the effect of homophily on academicoutcomes within student social networks.",
@@ -51,7 +52,7 @@
     },
     {
       "institution": "Universidad del Pacífico",
-      "url": "https://micromasters.mit.edu/dedp/",
+      "url": "https://www.up.edu.pe/carreras-postgrado-idiomas/carreras-pregrado/economia",
       "studyType": "Bsc in Economics",
       "startDate": "2017-03-01",
       "endDate": "2024-06-01",

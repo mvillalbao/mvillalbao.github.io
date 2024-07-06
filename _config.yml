@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Matias
 middle_name:
 last_name: Villalba
-email: mg.villalbao@alum.up.edu.pe
+email: matias.villalba.ortega@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   .
 footer_text: >
@@ -14,7 +14,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🚀 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://mvillalbao.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -52,7 +52,7 @@ search_enabled: false
 socials_in_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 750px #930px default
 
 # TODO: add layout settings (single page vs. multi-page)
 

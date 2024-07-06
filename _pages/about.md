@@ -21,4 +21,4 @@ I'm Research Assistant to <a href="https://ciup.up.edu.pe/investigadores/manuel-
 
 As a researcher I have a keen interest in topics of development economics, machine learning, and political economy.
 
-Previously, I completed my Bsc in Economics from <a href="https://up.edu.pe/" target="_blank">Universidad del Pacífico</a>, where I was adviced in my thesis by <a href="https://scholar.google.com/citations?hl=es&user=Ek1a88wAAAAJ" target="_blank">Alberto Chong</a> and worked on the <a href="/assets/pdf/bsc_thesis.pdf">impact evaluation of COVID-19 policies on the efficiency of public procurement</a>.
+Previously, I completed my Bsc in Economics from <a href="https://up.edu.pe/" target="_blank">Universidad del Pacífico</a>, where I was adviced in my thesis by <a href="https://scholar.google.com/citations?hl=es&user=Ek1a88wAAAAJ" target="_blank">Alberto Chong</a> and worked on the <a href="/assets/pdf/bsc_thesis.pdf" target="_blank">impact evaluation of COVID-19 policies on the efficiency of public procurement</a>.
