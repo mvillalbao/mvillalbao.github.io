@@ -2,6 +2,8 @@
 layout: schedule
 permalink: /lectures/
 title: Schedule
+nav: true
+nav_order: 8
 ---
 
 {% assign current_module = 0 %}
