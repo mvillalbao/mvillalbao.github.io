@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: A collection of my projects.
-nav: false
+nav: true
 nav_order: 3
 display_categories: [Causal AI course, work, fun]
 horizontal: false

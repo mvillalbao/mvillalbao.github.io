@@ -6,6 +6,7 @@ img: assets/img/p1_output_68_1.png
 importance: 1
 category: Causal AI course
 related_publications: false
+redirect: https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_1/group3_lab1_python.ipynb
 ---
 The jupiter notebook file is available <a href="https://github.com/alexanderquispe/CausalAI-Course/blob/main/labs/replication_1/group3_lab1_python.ipynb">here</a>
 

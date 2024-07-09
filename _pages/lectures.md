@@ -2,7 +2,7 @@
 layout: schedule
 permalink: /lectures/
 title: Schedule
-nav: true
+nav: false
 nav_order: 8
 ---
 
