@@ -6,7 +6,7 @@ description: A collection of my projects.
 nav: true
 nav_order: 3
 display_categories: [Causal AI course, work, fun]
-horizontal: false
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
