@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Causal Inference & Machine Learning Course
-description: This is a book that contains the labs and reports I elaborated for the Causal Inference & Machine Learning course I took at Universidad del Pacifico.
-
-The course, taught by Professor <a href='https://alexanderquispe.github.io/' target='_blank'>Alexander Quispe Rojas</a>, bridges the gap between causal inference in economic analysis and machine learning methods. It covers classical econometric structural models and their modern artificial intelligence counterparts, known as Directed Acyclic Graphs (DAGs). Throughout the course, we explored various machine learning and AI tools (lasso, random forest, and deep neural networks) for inferring causal parameters and quantifying uncertainty.
+description: This is a book that contains the labs and reports I elaborated for the Causal Inference & Machine Learning course I took at <a href='https://www.up.edu.pe/' target='_blank'>Universidad del Pacifico</a>.
 img: assets/img/p1_output_68_1.png
 importance: 1
 category: Causal AI course
