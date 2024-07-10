@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Causal Inference & Machine Learning Course
+title: Causal Inference \& Machine Learning Course
 description: This is a book that contains the labs and reports I elaborated for the Causal Inference & Machine Learning course I took at <a href='https://www.up.edu.pe/' target='_blank'>Universidad del Pacifico</a>.
 img: assets/img/p1_output_68_1.png
 importance: 1
