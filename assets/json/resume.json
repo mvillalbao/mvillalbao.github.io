@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Matías G. Villalba",
+    "name": "Matías Villalba Ortega",
     "label": "Economist",
     "image": "",
     "email": "matias.villalba.ortega@gmail.com",
-    "phone": "+51 946282000",
+    "phone": "+1(213)313-0998",
     "url": "https://mvillalbao.github.io",
-    "summary": "Recent graduate with a Bachelor's degree in Economics from Universidad del Pacífico (Perú), where I was adviced on my thesis by Alberto Chong and researched the impact of COVID-19 policies on the efficiency of public procurement. Currently woking as an RA to Manuel Barron at CIUP. With a passion for academia and research, particularly in topics of development economics, machine learning, and political economy.",
+    "summary": "Graduated from Universidad del Pacífico with a Bachelor's degree in Economics, advised by Professors Alberto Chong and Edgar Castro on a thesis examining the impact of COVID-19 policies on the efficiency of public procurement. Passionate about academia and research, with interests in development economics, machine learning, and applied microeconomics.",
     "location": {
       "address": "Calle Palo Blanco 161",
       "postalCode": "15038",
@@ -24,31 +24,41 @@
   },
   "work": [
     {
-      "name": "Centro de Investigación de la Universidad del Pacífico (CIUP)",
-      "position": "Research Assistant to Manuel Barrón",
-      "url": "https://ciup.up.edu.pe/investigadores/manuel-barron/",
-      "location": "Lima, Perú",
-      "startDate": "2023-09-01",
-      "summary": "Assisted with the development of a randomized control trial studying the effect of homophily on academicoutcomes within student social networks.",
-      "highlights": ["Designed and conducted baseline and endline surveys, critical for the project's data collection.", "Utilized Stata for rigorous cleaning and analysis of survey and large administrative datasets (+250k observations).","Created comprehensive tables in LaTeX, along with insightful figures."]
+      "name": "Inter-American Development Bank (IDB)",
+      "position": "Consultancy in Data Analysis for Fiscal Program Evaluations",
+      "url": "https://www.iadb.org/en",
+      "location": "Remote",
+      "startDate": "2025-03-01",
+      "summary": "Ongoing consultancy with the Fiscal Management Division (IFD/FMM), conducting data analysis to support the impact evaluation of multiple fiscal programs across the LAC region."
     },
     {
-      "name": "George Mason University and Inter-American Development Bank",
+      "name": "Independent",
       "position": "Research Assistant to Edgar Castro",
+      "url": "https://ciup.up.edu.pe/investigadores/manuel-barron/",
       "location": "Remote",
       "startDate": "2023-02-01",
-      "endDate": "2023-12-01",
-      "summary": "Assisted with multiple concurrent projects in political economy, primarily focusing on impact evaluation studiesanalyzing the effects of extreme COVID-19 policies in Colombia and Chile.",
-      "highlights": ["Utilized Stata and Python for web-scraping and complex data cleaning of massive government datasets (+2M observations).","Used OCR tools in Python for large-scale text extraction.","Fine-tuned and applied LLM for systematic entity identification and extraction, crucial to the project's methodology"]
+      "endDate": "2025-01-31",
+      "summary": "Worked on multiple concurrent projects in political economy, primarily focusing on impact evaluation studies analyzing the effects of COVID-19 policies in Colombia and Chile.",
+      "highlights": ["Processed and analyzed large-scale government datasets (2M+ observations) using Python and Stata.", "Implemented web-scraping, OCR pipelines, and fine-tuned Large Language Models (LLMs) for data extraction.","Recognized as co-author on multiple papers due to significant contributions; continued collaboration post-employment."]
+    },
+    {
+      "name": "Research Center of Universidad del Pacífico (CIUP)",
+      "position": "Research Assistant to Manuel Barrón",
+      "location": "Lima, Perú",
+      "startDate": "2023-09-01",
+      "endDate": "2024-12-01",
+      "summary": "Led the implementation of a randomized control trial assessing the impacts of homophily in student social networks.",
+      "highlights": ["Designed and executed baseline and endline surveys using SurveyCTO.","Performed data cleaning and analysis of administrative datasets (+250k observations) using Python and Stata.","Prepared publication-quality tables in LaTeX, and developed informative data visualizations."]
     }
   ],
   "education": [
     {
-      "institution": "Massachusetts Institute of Technology",
+      "institution": "Massachusetts Institute of Technology (MIT)",
       "url": "https://micromasters.mit.edu/dedp/",
       "studyType": "MicroMaster Program in Data, Economics, and Design of Policy",
       "startDate": "2022-02-01",
-      "courses": ["Data Analysis for Social Scientists", "Designing and Running Randomized Evaluations", "Microeconomics"]
+      "endDate": "2025-05-01",
+      "courses": ["Data Analysis for Social Scientists", "Designing and Running Randomized Evaluations", "Microeconomics", "Foundations of Development Policy", "Political Economy and Economic Development"]
     },
     {
       "institution": "Universidad del Pacífico",
@@ -59,14 +69,6 @@
       "courses": ["Causal Inference and ML", "Machine Learning for Economists", "Econometrics II", "Mathematics IV"]
     }
   ],
-  "publications": [
-    {
-      "name": "El efecto de la flexibilización de la contratación pública sobre su eficiencia: evidencia del caso peruano durante la pandemia",
-      "publisher": "Fondo Editorial de la Universidad del Pacífico",
-      "releaseDate": "2025-06-30",
-      "summary": "Selected as one of the top undergraduate theses for inclusion in an annual book highlighting exceptional research."
-    }
-  ],
   "languages": [
     {
       "language": "Spanish",
@@ -75,7 +77,7 @@
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Advanced, TOEFL iBT 108/120",
       "icon": ""
     }
   ]
